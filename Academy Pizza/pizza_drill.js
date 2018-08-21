@@ -20,16 +20,16 @@ function getReceipt() {
 			text1 = text1+selectedSize+"<br>";
 		}
 	}
-	if (selectedSize === "Personal Pizza") {
+	if (selectedSize === "Personal") {
 		sizeTotal = 6;
 		text2 = text2+sizeTotal+"<br>";
-	} else if (selectedSize === "Medium Pizza") {
+	} else if (selectedSize === "Medium") {
 		sizeTotal = 10;
 		text2 = text2+sizeTotal+"<br>";
-	} else if (selectedSize === "Large Pizza") {
+	} else if (selectedSize === "Large") {
 		sizeTotal = 14;
 		text2 = text2+sizeTotal+"<br>";
-	} else if (selectedSize === "Extra Large Pizza") {
+	} else if (selectedSize === "Extra Large") {
 		sizeTotal = 16;
 		text2 = text2+sizeTotal+"<br>";
 	}
@@ -117,7 +117,7 @@ function getCheese(runningTotal,text1,text2) {
 		if (cheeseArray[j].checked) {
 			selectedCheese = cheeseArray[j].value;
 		}
-		if (selectedCheese === "Extra cheese") {
+		if (selectedCheese === "Extra") {
 			cheeseTotal = 3;
 		}
 	}
@@ -148,7 +148,7 @@ function getCrust(runningTotal,text1,text2) {
 			selectedCrust = crustArray[j].value;
 			text1 = text1 + selectedCrust + "<br>";
 		}
-		if (selectedCrust === "Cheese Stuffed Crust") {
+		if (selectedCrust === "Cheese Stuffed") {
 			crustTotal = 3;
 		}
 	}
